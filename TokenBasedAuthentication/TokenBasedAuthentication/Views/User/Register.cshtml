@@ -1,0 +1,42 @@
+﻿@page
+@model TokenBasedAuthentication.Models.UserModal
+
+<h2>Register</h2>
+
+<div>
+    @using (Html.BeginForm("Register", "User", FormMethod.Post))
+    {
+            <div style="margin-bottom: 10px;">
+            @Html.LabelFor(m => m.UserName)
+            @Html.TextBoxFor(m => m.UserName)
+        </div>
+    @*    <div>
+            @Html.LabelFor(m => m.Email)
+            @Html.TextBoxFor(m => m.Email)
+        </div>
+        <div>
+            @Html.LabelFor(m => m.PhoneNumber)
+            @Html.TextBoxFor(m => m.PhoneNumber)
+        </div>
+        <div>
+            @Html.LabelFor(m => m.DateOfBirth)
+            @Html.TextBoxFor(m => m.DateOfBirth)
+        </div>
+        <div>
+            @Html.LabelFor(m => m.Age)
+            @Html.TextBoxFor(m => m.Age)
+        </div>*@
+        <div style="margin-bottom: 10px;">
+            @Html.LabelFor(m => m.Password)
+            @Html.TextBoxFor(m => m.Password)
+        </div>
+        <div style="margin-bottom: 10px;">
+            @Html.LabelFor(m => m.ConfirmPassword)
+            @Html.TextBoxFor(m => m.ConfirmPassword)
+        </div>
+
+        <div>
+            <button type="submit">Register</button>
+        </div>
+    }
+</div>
