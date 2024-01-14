@@ -1,0 +1,39 @@
+﻿@using TokenBasedAuthentication.Models
+
+@model List<UserModal>
+
+<!-- Modal -->
+<div>
+	<div class="header">
+		<h5 class="title" id="exampleModalLabel">Users</h5>
+	</div>
+	<div class="body">
+		<table class="table">
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Username</th>
+					<th>Email</th>
+					<th>Phone Number</th>
+					<th>Date of Birth</th>
+					<th>Age</th>
+					<th>Password</th>
+				</tr>
+			</thead>
+			<tbody>
+				@foreach (var item in Model)
+				{
+					<tr>
+						<td>@item.ID</td>
+						<td>@item.UserName</td>
+						<td>@item.Email</td>
+						<td>@item.PhoneNumber</td>
+						<td>@item.DateOfBirth</td>
+						<td>@item.Age</td>
+						<td>@item.Password</td>
+					</tr>
+				}
+			</tbody>
+		</table>
+	</div>
+</div>

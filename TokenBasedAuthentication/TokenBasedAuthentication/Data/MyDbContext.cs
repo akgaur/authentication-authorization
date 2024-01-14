@@ -7,6 +7,6 @@ namespace TokenBasedAuthentication.Data
         public MyDbContext(DbContextOptions options): base(options)
         {}
 
-        public DbSet<Models.Domain.User> Users { get; set; }
+        public DbSet<Models.Domain.UserEntity> Users { get; set; }
     }
 }
